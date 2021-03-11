@@ -1,0 +1,12 @@
+{
+    "users": [{
+        "id": 1,
+        "name": "Gleidson Alves",
+        "whatsapp": 31999998888
+    },
+    {
+        "id": 2,
+        "name": "Haroldo Kelly",
+        "whatsapp": 3199997777
+    }]
+}
