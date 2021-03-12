@@ -4,8 +4,9 @@ import { Container } from './styles'
 
 export default props =>
     <>
+    
         <Container>
-            <Header />
+        <Header {...props} />
             <main className="content">
                 Conteudo
         </main>

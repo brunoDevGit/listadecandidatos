@@ -3,9 +3,10 @@ export default createGlobalStyle`
 
     :root {
       --bg-blue: #e6ebf2;
-
+     
       --logo-height: 100px;
       --header-height: 100px;
+      --menu-top-height: 70px;
       --aside-width: 225px;
       --footer-height: 40px;
 
@@ -27,10 +28,11 @@ export default createGlobalStyle`
       var(--header-height)
       1fr
       var(--footer-height);
+
       grid-template-areas:
         "logo header"
         "menu content"
-         "menu footer";
+        "menu footer";
       height: 100vh;
       background-color: #F5f5f5;  
  }
@@ -40,11 +42,12 @@ export default createGlobalStyle`
   header.header {
    grid-area: header;
  }
-  aside.menu.area {
+  aside.menu-area {
    grid-area: menu;
  }
   main.content {
    grid-area: content;
+   background-color: rgb(44, 43, 43);
  }
   footer.footer {
    grid-area: footer;

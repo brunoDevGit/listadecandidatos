@@ -12,9 +12,12 @@ export default props =>
    <>
       <div className="app">
          <Logo />
-         <Menu />
-         <Main />
-         <Footer />
+         <Main 
+         icon="plane" 
+         title="Lista de Candidatos" 
+         subtitle="Projeto Lista de candidatos" />
+         <Menu/>
+         <Footer/>
       </div>
       <Styles/>
   </>
