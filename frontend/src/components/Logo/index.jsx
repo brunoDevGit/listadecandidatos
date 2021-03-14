@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import logo from '../../assets/imgs/logo192.png'
+import logo from '../../assets/imgs/logo193.png'
 
 
 export default props =>

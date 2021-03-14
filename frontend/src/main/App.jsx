@@ -4,20 +4,19 @@ import React from 'react'
 import Logo from '../components/Logo'
 import Main from '../components/Main'
 import Menu from '../components/Menu'
-import Footer from '../components/Footer'
+
 
 import Styles from './GlobalStyles'
 
 export default props =>
    <>
       <div className="app">
-         <Logo />
+         <Logo  icon="globe"/>
          <Main 
-         icon="plane" 
-         title="Lista de Candidatos" 
-         subtitle="Projeto Lista de candidatos" />
+         title="Global Contratações" 
+         subtitle="Candidatos a vaga de frontend" />
          <Menu/>
-         <Footer/>
+         
       </div>
       <Styles/>
   </>

@@ -2,17 +2,17 @@ import {createGlobalStyle} from 'styled-components';
 export default createGlobalStyle`
 
     :root {
-      --bg-blue: #e6ebf2;
+      --bg-blue: #ffffff;
      
       --logo-height: 100px;
       --header-height: 100px;
       --menu-top-height: 70px;
       --aside-width: 225px;
-      --footer-height: 40px;
+      
 
       --shadow: 
-        0 2px 23px 0 rgba(0,0,0,0.1),
-        0 2px 49px 0 rgba(0, 0, 0, 0.06);
+        0 2px 23px 0 #00CED1,
+        0 2px 49px 0 rgba(84, 231, 242, 0.06);
 
 
     }
@@ -26,15 +26,16 @@ export default createGlobalStyle`
    grid-template-columns: var(--aside-width) 1fr;
    grid-template-rows:
       var(--header-height)
-      1fr
-      var(--footer-height);
+      1fr;
+      
 
       grid-template-areas:
         "logo header"
         "menu content"
-        "menu footer";
+        "menu content";
+        
       height: 100vh;
-      background-color: #F5f5f5;  
+      background: linear-gradient(180deg, #ffffff 15%, #00CED1 )
  }
   aside.logo {
    grid-area: logo;
@@ -44,12 +45,11 @@ export default createGlobalStyle`
  }
   aside.menu-area {
    grid-area: menu;
+   background-color: #00CED1;
  }
   main.content {
    grid-area: content;
-   background-color: rgb(44, 43, 43);
+   background-color: #ffffff;
  }
-  footer.footer {
-   grid-area: footer;
- }
+ 
 `;

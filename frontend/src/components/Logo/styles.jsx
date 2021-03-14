@@ -8,8 +8,10 @@ export const Container = styled.div`
         align-items: center;
     }
     aside.logo img {
-        padding: 0px 15px;
-        width: 40%;
+        padding: 0px 0px 0px 0px;
+        margin:10px 0px 0px 60px;
+        width: 45%;
+        
        
     }
 `;
